@@ -69,7 +69,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="centerBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o0P-va-pCg"/>
+                                    <action selector="centerMapBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GFb-NN-CTv"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOA-BI-gFt">
@@ -98,7 +98,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="map" destination="nGR-cj-xsh" id="m3k-Em-QCs"/>
+                        <outlet property="mapView" destination="nGR-cj-xsh" id="0fY-85-ojr"/>
                         <outlet property="pullUpView" destination="kOA-BI-gFt" id="Xe4-PR-SpY"/>
                         <outlet property="pullUpViewHeightConstraint" destination="74T-nV-7oF" id="A4c-BA-PCg"/>
                     </connections>
