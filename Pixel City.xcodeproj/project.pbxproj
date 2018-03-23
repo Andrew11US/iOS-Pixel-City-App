@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		019BC9782065439300014377 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019BC9772065439300014377 /* CustomButton.swift */; };
 		01B054EE20652A2600DA1A74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B054ED20652A2600DA1A74 /* AppDelegate.swift */; };
 		01B054F020652A2600DA1A74 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B054EF20652A2600DA1A74 /* MapVC.swift */; };
 		01B054F320652A2600DA1A74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B054F120652A2600DA1A74 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		019BC9772065439300014377 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		019BC9792065447500014377 /* Pixel City-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pixel City-Bridging-Header.h"; sourceTree = "<group>"; };
 		01B054EA20652A2600DA1A74 /* Pixel City.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pixel City.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01B054ED20652A2600DA1A74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01B054EF20652A2600DA1A74 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
@@ -91,6 +94,7 @@
 		01B055012065344D00DA1A74 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				019BC9772065439300014377 /* CustomButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -114,6 +118,7 @@
 			children = (
 				01B054ED20652A2600DA1A74 /* AppDelegate.swift */,
 				01B054F920652A2600DA1A74 /* Info.plist */,
+				019BC9792065447500014377 /* Pixel City-Bridging-Header.h */,
 			);
 			name = "Support Files";
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				TargetAttributes = {
 					01B054E920652A2600DA1A74 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -257,11 +263,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Pixel City/Pods-Pixel City-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -275,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				019BC9782065439300014377 /* CustomButton.swift in Sources */,
 				01B054F020652A2600DA1A74 /* MapVC.swift in Sources */,
 				01B054EE20652A2600DA1A74 /* AppDelegate.swift in Sources */,
 			);
@@ -414,12 +423,15 @@
 			baseConfigurationReference = 60705F9A4FD0246C2449C00F /* Pods-Pixel City.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PTRW36GG78;
 				INFOPLIST_FILE = "Pixel City/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.losAngelesBoy.Pixel-City";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pixel City/Pixel City-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -430,12 +442,14 @@
 			baseConfigurationReference = B78598B18833F507D402A41E /* Pods-Pixel City.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PTRW36GG78;
 				INFOPLIST_FILE = "Pixel City/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.losAngelesBoy.Pixel-City";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pixel City/Pixel City-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

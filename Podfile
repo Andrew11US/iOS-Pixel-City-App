@@ -7,5 +7,6 @@ target 'Pixel City' do
 
   pod 'Alamofire', '~> 4.7'
   pod 'AlamofireImage', '~> 3.3'
-  
+  pod 'pop', '~> 1.0'
+
 end
