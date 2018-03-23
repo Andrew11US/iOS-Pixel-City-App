@@ -107,5 +107,43 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
+        <!--PopVC-->
+        <scene sceneID="c4j-OY-oC1">
+            <objects>
+                <viewController storyboardIdentifier="PopVC" id="X7q-HX-ET2" customClass="PopVC" customModule="Pixel_City" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="90w-9h-HIr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bp7-Bm-Ocy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double tap to dismiss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03O-j3-Ovh">
+                                <rect key="frame" x="102.5" y="626" width="169.5" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QIh-UG-W4T" firstAttribute="trailing" secondItem="Bp7-Bm-Ocy" secondAttribute="trailing" id="LCj-fi-9GT"/>
+                            <constraint firstItem="03O-j3-Ovh" firstAttribute="centerX" secondItem="90w-9h-HIr" secondAttribute="centerX" id="PwL-1k-Rzj"/>
+                            <constraint firstItem="Bp7-Bm-Ocy" firstAttribute="leading" secondItem="QIh-UG-W4T" secondAttribute="leading" id="eEt-yW-idK"/>
+                            <constraint firstItem="QIh-UG-W4T" firstAttribute="bottom" secondItem="Bp7-Bm-Ocy" secondAttribute="bottom" id="hNx-EO-Yww"/>
+                            <constraint firstItem="Bp7-Bm-Ocy" firstAttribute="top" secondItem="90w-9h-HIr" secondAttribute="top" id="llI-4d-bfx"/>
+                            <constraint firstItem="QIh-UG-W4T" firstAttribute="bottom" secondItem="03O-j3-Ovh" secondAttribute="bottom" constant="20" id="mxG-GD-I9k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QIh-UG-W4T"/>
+                    </view>
+                    <connections>
+                        <outlet property="popImageView" destination="Bp7-Bm-Ocy" id="Etv-vT-7c8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3l8-jf-rnc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021.6" y="132.68365817091455"/>
+        </scene>
     </scenes>
 </document>
