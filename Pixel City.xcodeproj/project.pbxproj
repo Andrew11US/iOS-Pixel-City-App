@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		019BC9782065439300014377 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019BC9772065439300014377 /* CustomButton.swift */; };
+		019BC990206547C700014377 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019BC98F206547C700014377 /* CustomView.swift */; };
+		019BC992206548FD00014377 /* Material Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019BC991206548FD00014377 /* Material Design.swift */; };
 		01B054EE20652A2600DA1A74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B054ED20652A2600DA1A74 /* AppDelegate.swift */; };
 		01B054F020652A2600DA1A74 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B054EF20652A2600DA1A74 /* MapVC.swift */; };
 		01B054F320652A2600DA1A74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B054F120652A2600DA1A74 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		019BC9772065439300014377 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		019BC9792065447500014377 /* Pixel City-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pixel City-Bridging-Header.h"; sourceTree = "<group>"; };
+		019BC98F206547C700014377 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		019BC991206548FD00014377 /* Material Design.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Material Design.swift"; sourceTree = "<group>"; };
 		01B054EA20652A2600DA1A74 /* Pixel City.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pixel City.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01B054ED20652A2600DA1A74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01B054EF20652A2600DA1A74 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				019BC9772065439300014377 /* CustomButton.swift */,
+				019BC98F206547C700014377 /* CustomView.swift */,
+				019BC991206548FD00014377 /* Material Design.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -284,8 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				019BC9782065439300014377 /* CustomButton.swift in Sources */,
+				019BC990206547C700014377 /* CustomView.swift in Sources */,
 				01B054F020652A2600DA1A74 /* MapVC.swift in Sources */,
 				01B054EE20652A2600DA1A74 /* AppDelegate.swift in Sources */,
+				019BC992206548FD00014377 /* Material Design.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

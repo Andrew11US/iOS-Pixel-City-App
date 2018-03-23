@@ -1,45 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="VerdanaBold.ttf">
+            <string>Verdana-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--MapVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MapVC" customModule="Pixel_City" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nGR-cj-xsh">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nGR-cj-xsh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WU9-CJ-sAH">
-                                <rect key="frame" x="27" y="44" width="309" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view clipsSubviews="YES" alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WU9-CJ-sAH" customClass="CustomView" customModule="Pixel_City" customModuleProvider="target">
+                                <rect key="frame" x="50" y="40" width="275" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick the place" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGw-AK-tWs">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="40"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="13"/>
+                                        <color key="textColor" red="0.30196078430000001" green="0.31764705879999999" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="wGw-AK-tWs" secondAttribute="bottom" id="J9M-iJ-ZUT"/>
+                                    <constraint firstItem="wGw-AK-tWs" firstAttribute="leading" secondItem="WU9-CJ-sAH" secondAttribute="leading" id="KtA-EA-4de"/>
+                                    <constraint firstAttribute="height" constant="40" id="NPz-0m-Okp"/>
+                                    <constraint firstItem="wGw-AK-tWs" firstAttribute="top" secondItem="WU9-CJ-sAH" secondAttribute="top" id="OFi-Md-k5h"/>
+                                    <constraint firstAttribute="trailing" secondItem="wGw-AK-tWs" secondAttribute="trailing" id="elb-SV-J5j"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="546-sf-0RT" customClass="CustomButton" customModule="Pixel_City" customModuleProvider="target">
+                                <rect key="frame" x="305" y="577" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="f9u-4Q-2Pf"/>
+                                    <constraint firstAttribute="width" constant="40" id="fFw-E1-OzS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.31764705879999999" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="centerBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o0P-va-pCg"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOA-BI-gFt">
+                                <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="C9s-AG-wkO"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="nGR-cj-xsh" secondAttribute="bottom" id="CPt-Kh-x7H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="546-sf-0RT" secondAttribute="trailing" constant="30" id="JBz-x5-w3g"/>
                             <constraint firstItem="nGR-cj-xsh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L5J-pD-4Dl"/>
-                            <constraint firstItem="nGR-cj-xsh" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Qqd-Lf-Dtg"/>
+                            <constraint firstItem="kOA-BI-gFt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MBO-fM-BLX"/>
+                            <constraint firstItem="kOA-BI-gFt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Phr-VA-jeT"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="546-sf-0RT" secondAttribute="bottom" constant="50" id="fyJ-pe-dNe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WU9-CJ-sAH" secondAttribute="trailing" constant="50" id="lgc-vX-Cdu"/>
                             <constraint firstItem="nGR-cj-xsh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nxl-BE-u8J"/>
+                            <constraint firstItem="kOA-BI-gFt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="oil-Ds-h0S"/>
+                            <constraint firstItem="WU9-CJ-sAH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="sxs-hX-d5O"/>
                             <constraint firstItem="nGR-cj-xsh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ulY-bX-dXS"/>
+                            <constraint firstItem="WU9-CJ-sAH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="wMb-TI-vhF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="map" destination="nGR-cj-xsh" id="m3k-Em-QCs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
