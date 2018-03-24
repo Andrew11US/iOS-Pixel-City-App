@@ -23,15 +23,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nGR-cj-xsh">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" showsUserLocation="YES" showsCompass="NO" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nGR-cj-xsh">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="666"/>
                                 <gestureRecognizers/>
                             </mapView>
                             <view clipsSubviews="YES" alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WU9-CJ-sAH" customClass="CustomView" customModule="Pixel_City" customModuleProvider="target">
-                                <rect key="frame" x="50" y="40" width="275" height="40"/>
+                                <rect key="frame" x="80" y="40" width="215" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick the place" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGw-AK-tWs">
-                                        <rect key="frame" x="0.0" y="0.0" width="275" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="215" height="40"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="13"/>
                                         <color key="textColor" red="0.30196078430000001" green="0.31764705879999999" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -88,10 +88,10 @@
                             <constraint firstItem="kOA-BI-gFt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Phr-VA-jeT"/>
                             <constraint firstItem="kOA-BI-gFt" firstAttribute="top" secondItem="nGR-cj-xsh" secondAttribute="bottom" id="ga9-mf-LA8"/>
                             <constraint firstItem="kOA-BI-gFt" firstAttribute="top" secondItem="546-sf-0RT" secondAttribute="bottom" constant="30" id="je9-gn-EJ3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WU9-CJ-sAH" secondAttribute="trailing" constant="50" id="lgc-vX-Cdu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WU9-CJ-sAH" secondAttribute="trailing" constant="80" id="lgc-vX-Cdu"/>
                             <constraint firstItem="nGR-cj-xsh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nxl-BE-u8J"/>
                             <constraint firstItem="kOA-BI-gFt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="oil-Ds-h0S"/>
-                            <constraint firstItem="WU9-CJ-sAH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="sxs-hX-d5O"/>
+                            <constraint firstItem="WU9-CJ-sAH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="sxs-hX-d5O"/>
                             <constraint firstItem="nGR-cj-xsh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ulY-bX-dXS"/>
                             <constraint firstItem="WU9-CJ-sAH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="wMb-TI-vhF"/>
                         </constraints>
@@ -118,11 +118,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bp7-Bm-Ocy">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double tap to dismiss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03O-j3-Ovh">
-                                <rect key="frame" x="102.5" y="626" width="169.5" height="21"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double tap to dismiss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03O-j3-Ovh">
+                                <rect key="frame" x="99.5" y="626" width="176.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -143,7 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3l8-jf-rnc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1021.6" y="132.68365817091455"/>
+            <point key="canvasLocation" x="900" y="133"/>
         </scene>
     </scenes>
 </document>
